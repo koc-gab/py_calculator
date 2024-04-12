@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <py-script src="main.py"></py-script>
-</body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <div class="display">
+            <div class="input">
+                <input  type="text">
+                <select name="" id="operation">
+                    <option value="add">+</option>
+                    <option value="substract">-</option>
+                    <option value="multiplication">x</option>
+                    <option value="division">:</option>
+                </select>
+                <input type="text">
+            </div>
+        </div>
+            <div class="buttons">
+                <button class="button">C</button>
+                <button class="button">=</button>
+            </div>
+        <div class="result">
+            <p></p>
+        </div>
+        <py-script src="main.py"></py-script>
+    </div>
+    </body>
 </html>
